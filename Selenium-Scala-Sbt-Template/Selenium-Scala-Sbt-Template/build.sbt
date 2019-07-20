@@ -1,14 +1,13 @@
-name := "Selenium-Scala-Sbt-Template"
-
+name := "selenium-scala-sbt-template"
 version := "0.1"
 
-scalaVersion := "2.13.0"
+scalaVersion := "2.12.6"
 
 fork in Test := true
 
 libraryDependencies ++= Seq(
   "org.seleniumhq.selenium" % "selenium-java" % "3.141.59",
-  "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+  "org.scalatest" %% "scalatest" % "3.0.8" % Test,
   "io.github.bonigarcia" % "webdrivermanager" % "3.2.0"
 
 )
